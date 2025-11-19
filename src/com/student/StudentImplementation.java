@@ -31,10 +31,17 @@ public class StudentImplementation implements StudentOperation{
 	
 
 	@Override
-	public void updateStudent(Student s) {
-		// TODO Auto-generated method stub
-		
-	}
+			public void updateStudent(Student updatedStudent) {
+	        for (int i = 0; i < students.size(); i++) {
+	            if (students.get(i).getId() == updatedStudent.getId()) {
+	                students.set(i, updatedStudent);
+	                System.out.println("Student updated successfully.");
+	                return;
+	            }
+	        }
+	        System.out.println("Student not found for update.");
+	    }
+	
 
 	@Override
 	public void deleteStudent(int id) {
