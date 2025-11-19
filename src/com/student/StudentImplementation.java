@@ -19,9 +19,16 @@ public class StudentImplementation implements StudentOperation{
 
 	@Override
 	public void addStudent(Student s) {
-		// TODO Auto-generated method stub
+	
+	        if (findStudent(s.getId()) == null) {
+	            students.add(s);
+	            System.out.println("Student added.");
+	        } else {
+	            System.out.println("Student with ID " + s.getId() + " already exists!");
+	        }
+	    }
 		
-	}
+	
 
 	@Override
 	public void updateStudent(Student s) {

@@ -32,9 +32,18 @@ public static void main(String[] args) {
               }
               case 2:{
             	// Add students
+            	  System.out.print("Enter ID: ");
+                  int id = sc.nextInt();
+                  sc.nextLine(); 
+                  System.out.print("Enter Name: ");
+                  String name = sc.nextLine();
+                  System.out.print("Enter Marks: ");
+                  int marks = sc.nextInt();
+
+                  ops.addStudent(new Student(id, name, marks));
+                  break;
             	  
-            	  
-            	  break;
+            	 
               }
               case 3:{
            	        //Update a student
