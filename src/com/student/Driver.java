@@ -46,10 +46,17 @@ public static void main(String[] args) {
             	 
               }
               case 3:{
-           	        //Update a student
-            	  
-            	  
-            	  break;
+            	  System.out.print("Enter ID to update: ");
+                  int uid = sc.nextInt();
+                  sc.nextLine();
+                  System.out.print("Enter New Name: ");
+                  String newName = sc.nextLine();
+                  System.out.print("Enter New Marks: ");
+                  int newMarks = sc.nextInt();
+
+                  ops.updateStudent(new Student(uid, newName, newMarks));
+                  break;   	  
+         
               }
               case 4:{
             	  //delete a student
