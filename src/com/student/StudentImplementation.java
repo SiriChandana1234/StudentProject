@@ -9,8 +9,12 @@ public class StudentImplementation implements StudentOperation{
 	
 	@Override
 	public Student findStudent(int id) {
-		// TODO Auto-generated method stub
-		return null;
+	  for(Student s :students) {
+		  if(s.getId()==id) {
+			  return s;
+		  }
+	  }
+	  return null;
 	}
 
 	@Override

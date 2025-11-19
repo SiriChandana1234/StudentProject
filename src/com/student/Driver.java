@@ -23,7 +23,10 @@ public static void main(String[] args) {
            
               case 1:{
             	   //Find a student 
-            	  
+            	  System.out.println("Enter ID to search: ");
+            	  int findId= sc.nextInt();
+            	  Student found =ops.findStudent(findId);
+            	  System.out.println(found !=null ? found : "student not found.");
             	  
             	  break;
               }
