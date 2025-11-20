@@ -45,8 +45,8 @@ public class StudentImplementation implements StudentOperation{
 
 	@Override
 	public void deleteStudent(int id) {
-		// TODO Auto-generated method stub
-		
+	//this  is bhavan
+		System.out.println("BHAVAN");
 	}
 
 }
