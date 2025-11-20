@@ -60,9 +60,13 @@ public static void main(String[] args) {
               }
               case 4:{
             	  //delete a student
+            	  System.out.print("Enter ID to delete: ");
+                  int did = sc.nextInt();
+                  ops.deleteStudent(did);
+                  break;
             	  
            	   
-            	  break;
+            	  
               }
               case 5:{
             	  System.out.println("Exiting... Goodbye!");

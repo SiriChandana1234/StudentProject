@@ -44,13 +44,14 @@ public class StudentImplementation implements StudentOperation{
 	
 
 	@Override
-	public void deleteStudent(int id) {
-	//this  is bhavan
-		System.out.println("BHAVAN");
-		
-		//this is new bhavan 
-		//kjdbndsg
-		//skjfdsnf
-	}
+    public void deleteStudent(int id) {
+        Student found = findStudent(id);
+        if (found != null) {
+            students.remove(found);
+            System.out.println("Student deleted.");
+        } else {
+            System.out.println("Student not found for deletion.");
+        }
+    }
 
 }
